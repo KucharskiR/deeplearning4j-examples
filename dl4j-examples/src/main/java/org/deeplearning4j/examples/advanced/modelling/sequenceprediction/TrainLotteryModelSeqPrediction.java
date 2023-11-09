@@ -20,6 +20,9 @@
 package org.deeplearning4j.examples.advanced.modelling.sequenceprediction;
 
 
+import java.io.File;
+import java.util.Random;
+
 import org.deeplearning4j.core.storage.StatsStorage;
 import org.deeplearning4j.examples.utils.DownloaderUtility;
 import org.deeplearning4j.nn.api.OptimizationAlgorithm;
@@ -43,9 +46,6 @@ import org.nd4j.linalg.learning.config.RmsProp;
 import org.nd4j.linalg.lossfunctions.LossFunctions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.io.File;
-import java.util.Random;
 
 
 /**
