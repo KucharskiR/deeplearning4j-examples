@@ -62,7 +62,7 @@ public class TrainLotteryModelSeqPrediction {
     private static int batchSize = 64;
     private static long seed = 123;
     private static int numEpochs = 3;
-    private static boolean modelType = true;
+    private static boolean modelType = false;
 
     public static String dataLocalPath;
 
@@ -143,7 +143,7 @@ public class TrainLotteryModelSeqPrediction {
             System.out.println("current lottery numbers==" + currentLottery + "==prediction===next lottery numbers==" + latestLottery.toString());
 
         } else {
-            int predictCount = 2;
+            int predictCount = 5;
             String predictDateNum = "20180716100";//20180716,100
             //Create input for initialization
             //For single time step:input has shape [miniBatchSize,inputSize] or [miniBatchSize,inputSize,1]. miniBatchSize=1 for single example.<br>
